@@ -26,10 +26,16 @@ $(function(){
         $('.icon-th-large').addClass('active')
         $('.icon-th-list').removeClass('active')
     })
+    
+    $('.menu__btn').on('click', function(){
+        $('.menu__list').slideToggle();
+    })
+
+    $('.header__btn-menu').on('click', function(){
+        $('.header__box').toggleClass('active');
+    })
 
     
-    
-
     
     $('.product-slider__inner').slick({
         dots: true,   
