@@ -45,6 +45,7 @@ $(function(){
             return false;
     });
 
+    $('input[type="file"], select').styler(); 
 
     $('.product-slider__inner').slick({
         dots: true,   
