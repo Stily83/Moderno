@@ -7,9 +7,11 @@ html {
 html,
 body {
   height: 100%; 
-  background-color: #f4f6f5;
+  background-color: #f4f6f5;  
 }
 .wrapper {
+  position: relative;
+  overflow: hidden;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -35,8 +37,7 @@ body {
   font-family: 'Roboto-Regular', sans-serif; 
   font-size: 15px;
   line-height: 24px;
-  color: $text;
-  overflow-x: hidden;
+  color: $text;  
 } 
 .container {
   max-width: 1200px;
@@ -70,7 +71,9 @@ body {
 }
 
 .breadcrumns {
+  overflow: hidden;
   padding: 45px 0 40px;
+  width: 1200px;
   &__list {
     li {
       position: relative;
